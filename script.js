@@ -4,8 +4,6 @@ function placeOrder() {
 
     var meal = document.getElementById("meal").value;
     var qty = document.getElementById("qty").value;
-    // var qty = document.getElementById("3").value;
-    // var order_list = {name: name, category: category, qty: qty}
     var order_list = {orderNo: orderNo, meal: meal, qty: qty}
     disp_order(order_list);
     disp_bill(order_list);
