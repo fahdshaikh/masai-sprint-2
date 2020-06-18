@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bill Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <h1>Bill Generator.</h1>
+    </div>
+    
+    <hr>
+
+    <form id="bill"><p id="font2">Menu.</p>
+        <!-- <input id="1" class="item" type="text" name="item" placeholder="Grocery Item."/> -->
+        <select id="meal">
+            <option value="Breakfast Opt 1">Breakfast Opt 1 ----------------- Price: 40₹</option>
+            <option value="Breakfast Opt 2">Breakfast Opt 2 ----------------- Price: 60₹</option>
+            <option value="Starter Opt 1">Starter Opt 1 --------------------- Price: 40₹</option>
+            <option value="Starter Opt 2">Starter Opt 2 --------------------- Price: 40₹</option>
+            <option value="Main Course Opt 1">Main Course Opt 1 ------------- Price: 40₹</option>
+            <option value="Main Course Opt 2">Main Course Opt 2 ------------- Price: 40₹</option>
+            <option value="Beverage Opt 1">Beverage Opt 1 ----------------- Price: 40₹</option>
+            <option value="Beverage Opt 2">Beverage Opt 2 ----------------- Price: 40₹</option>
+            <option value="Desert Opt 1">Desert Opt 1 --------------------- Price: 40₹</option>
+            <option value="Desert Opt 2">Desert Opt 2 --------------------- Price: 40₹</option>
+            
+        </select>
+        <input id="qty" class="qty" type="number" name="qty" placeholder="Quantity."/>
+        <button onclick="placeOrder()">Place Order</button>
+        <!-- <button onclick="sumbitAnswer()">Place Order</button> -->
+    </form>
+
+    <div>
+        <p id="font2">Your Orders:</p>
+        <table id="disp_order">
+            <tr>
+                <td>Order</td>
+                <td>Quantity</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+    
+    <div>
+        <p id="font2">Your Bill:</p>
+        <table id="disp_bill">
+            <tr>
+              <td>Order No.</td>
+              <td>Order</td>
+              <td>Quantity</td>
+              <td>Per Plate(₹)</td>
+              <td>Total(₹)</td>
+            </tr>
+        </table>
+    </div>     
+
+    <form id="discount">
+        <p id="font2">Coupon:</p>
+        <select id="off">
+            <option value="">Coupon 1 (200₹ OFF)</option>
+            <option value="">Coupon 1 (250₹ OFF)</option>
+            <option value="">Coupon 1 (300₹ OFF)</option>
+            <option value="">No Coupon</option>
+        </select>
+        <button onclick="finalizeAmt()">Tally Total Ammount</button>
+    </form>
+
+    <div>
+        <p id="font2">Total Ammount:</p>
+        <table id="totalAmt">
+            <tr>
+                <td>Total Ammount to be Paid: </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+    
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

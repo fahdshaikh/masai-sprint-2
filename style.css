@@ -1,0 +1,11 @@
+table {
+    border: 1px solid black;
+}
+td {
+    border: 1px solid red;
+}
+
+#font2 {
+    font-size: 18px;
+    font-weight: bold;
+}
